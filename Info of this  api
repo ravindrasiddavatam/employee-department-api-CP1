@@ -1,0 +1,25 @@
+https://chatgpt.com/c/678ae1ca-e100-8007-b121-dcfd921d8eb3
+
+You are tasked to build out a set of restful APIs to retrieve employee information of an organization using the following technologies:
+              a) JPA/Hibernate
+              b) Spring Boot powered application
+              c) Spring MVC for rest controllers
+ 
+1) Design/Develop the JPA entity layer to store Employee as well as Department information in a relational database. 
+              The Employee entity has the following attributes:
+              a) employee number (unique)
+              b) employee name (full name)
+ 
+              The Department entity has the following attribute:
+              a) department name (unique)
+ 
+              NOTE: One employee can only belong to one department.
+ 
+2) Design/develop a business service layer (let's call it "EmployeeInfoBusinessService") to perform the following tasks:
+              a) given a department name, find all the employees under that department sorted by employee number;
+              b) given a department name, find all the employees whose name starts with "A" (case insensitive);
+              c) find all the employees of the organization sorted by department name followed by employee number;
+ 
+3) Design/develop a set of rest endpoints to perform the following tasks:
+              a) Retrieve all the employees for a given department name and sorted by employee name
+              b) Retrieve the department name for a given employee number
